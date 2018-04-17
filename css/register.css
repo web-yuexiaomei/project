@@ -1,0 +1,185 @@
+/*body的公共样式*/
+body{
+    background: #f9fbff;
+    position:relative;
+    height:100%;
+    color:#738299;
+    z-index:4;
+}
+/*头部的样式*/
+.y_register_mian>div.y_header{
+    width:980px;
+    height:100px;
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: right;
+}
+/*头部中logo的样式*/
+.y_register_mian>div.y_header>a>img{
+    float: left;
+    margin-top:20px;
+}
+/*头部中小喇叭的样式*/
+.y_register_mian>div.y_header>a>span{
+    display: inline-block;
+    width:28px;
+    height:20px;
+    position: relative;
+    top:5px;
+    left:2px;
+    background: url(../img/register/icons.png) no-repeat;
+}
+/*头部中文字广告的样式*/
+.y_register_mian>div.y_header>a>font{
+    font-size: 18px;
+    color:#738299;
+    padding: 0 20px 0 8px;
+}
+/*<!--2.注册板块-->*/
+.y_register_mian>div.y_m{
+    width:830px;
+    margin: 0 auto;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 9px 0 rgba(0,72,255,0.17);
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+/*<!--2.2 中间的表单部分-->*/
+.y_register_mian>div.y_m>div.y_form{
+    width:650px;
+    margin:0 auto;
+    padding:40px;
+}
+/*<!--2.2 中间的表单部分中的统一p标签样式-->*/
+.y_register_mian>div.y_m>div.y_form>form>p{
+    width:100%;
+    margin-bottom: 40px;
+    font-size:16px;
+    margin-left: 85px;
+}
+/*<!--2.2 中间的表单部分中的统一span提示消息样式-->*/
+.y_register_mian>div.y_m>div.y_form .y_show{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    position: relative;
+    top:3px;
+}
+/*<!--2.2 中间的表单部分中的统一span默认隐藏样式-->*/
+.y_register_mian>div.y_m>div.y_form .y_font_show{
+    display: none;
+}
+/*<!--2.2 中间的表单部分中的统一span提示错误消息样式-->*/
+.y_register_mian>div.y_m>div.y_form .y_fail_show{
+    background: url(../img/register/icons.png) -174px 0px no-repeat;
+}
+/*<!--2.2 中间的表单部分中的统一span提示正确消息样式-->*/
+.y_register_mian>div.y_m>div.y_form .y_success_show{
+    background: url(../img/register/icons.png) -174px -55px no-repeat;
+}
+.y_register_mian>div.y_m>div.y_form>form>p>input{
+    width:40%;
+    border-bottom:1px solid #DDDDDD;
+    height:36px;
+    margin: 0 5px 0 10px;
+    padding-left:10px;
+    outline:0;
+    background-color: white;
+    cursor: text;
+}
+/*<!--2.2 中间的表单部分中的获取验证码样式-->*/
+.y_register_mian>div.y_m>div.y_form>form>p:nth-child(3)>span.y_test{
+    border:1px solid #A7CFFF;
+    padding: 5px 10px;
+    color: #549FFF;
+}
+.y_register_mian>div.y_m>div.y_form>form>p:nth-child(3)>span.y_test:hover{
+    background: #4F9FFF;
+    color: #fff;
+    cursor: pointer;
+}
+/*<!--2.2 中间的表单部分中的验证码显示的样式-->*/
+.y_register_mian>div.y_m>div.y_form .y_code{
+    position:relative;
+    top:-25px;
+    left:67px;
+    margin-bottom: 0px;
+    opacity:0;
+}
+.y_register_mian>div.y_m>div.y_form .y_code_input{
+    position: relative;
+    left:8px;
+}
+/*复选框input的样式*/
+.y_register_mian>div.y_m>div.y_form>form .y_checkbox{
+    margin-top:-55px;
+    margin-bottom:15px;
+    margin-left: 100px;
+}
+.y_register_mian>div.y_m>div.y_form>form>p .checkbox{
+    width:13px;
+    height:13px;
+    border: 1px solid #8D99AC;
+    margin:0 0 0 50px;
+    position: relative;
+    top:2px;
+    left:2px;
+    cursor: pointer;
+}
+/*复选框a的样式*/
+.y_register_mian>div.y_m>div.y_form>form>p .agree{
+    color:#738299;
+}
+.y_register_mian>div.y_m>div.y_form>form>p label{
+    cursor: pointer;
+}
+/*<!--免费注册按钮-->*/
+.y_register_mian>div.y_m>div.y_form>form>p .y_btn{
+    width:45%;
+    height:50px;
+    display: inline-block;
+    margin-left:65px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background:#1984CD;
+}
+.y_register_mian>div.y_m>div.y_form>form>p .y_btn:hover{
+    opacity: 0.9;
+}
+/*<!--已有账号，直接登录-->*/
+.y_register_mian>div.y_m>div.y_form>form>p:last-child{
+    margin-left: 200px;
+    margin-top: -25px;
+}
+.y_register_mian>div.y_m>div.y_form>form>p a.y_submit{
+    color: #0075FF;
+    text-decoration: underline;
+}
+/*<!--2.3 底部的文字部分-->*/
+.y_register_mian>div.y_m>p{
+    width:100%;
+    text-align: center;
+}
+/*<!--canvas背景的绘制-->*/
+div.y_canvas{
+    width:100%;
+    height:110px;
+    overflow: hidden;
+    position: fixed;
+    bottom:0;
+}
+canvas{
+    position: absolute;
+}
+#y_register1{
+    z-index: 1;
+}
+#y_register2{
+    z-index: 2;
+}
+#y_register3{
+    z-index: 3;
+}

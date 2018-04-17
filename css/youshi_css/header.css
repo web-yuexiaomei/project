@@ -1,0 +1,506 @@
+body{
+    padding:0;
+    margin:0;
+
+}
+#header{
+    height: 90px;
+}
+.header{
+    height: 100%;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #1984CD;
+}
+ul{
+    list-style: none;
+}
+
+/*pc端样式*/
+@media screen and  (min-width: 992px) {
+    .header>.common{
+        width:100%;
+        height: 90px;
+        margin:0 auto;
+        border-bottom:1px solid #fff;
+        position: fixed;
+        top:0;left:0;
+        background: #fff;
+        transition: all .4s ease-in-out;
+        overflow: hidden;
+        z-index: 12;
+    }
+    .header .common img{
+        width:15%;
+        margin-left:50px;
+        margin-top:5px;
+    }
+
+
+    .header .common .nav{
+
+        position: absolute;
+        top:15%;right:10px;
+        /* border:1px solid red; */
+        width:450px;
+        height:25px;
+        overflow: hidden;
+    }
+    .header .common .nav>div>a{
+        display: block;
+        line-height: 25px;
+
+        font-size:15px;
+    }
+    .header .common .nav>div>a:hover{
+        text-decoration:underline;
+        color:blue;
+    }
+
+
+
+    .header .nav>div{
+        float: left;
+        width:40px;height:50px;
+        margin-left:9px;
+        margin-top:0;
+        /*border:1px solid green;*/
+        transition: all .2s ease-in-out;
+    }
+
+
+    .header .nav>div:hover{
+        transform: translateY(-25px);
+    }
+
+    /*隐藏部分*/
+    .t_hidden{
+        width:100%;
+        height:86px;
+        margin:0 auto;
+        position: fixed;
+        top:-86px;
+        left:0;
+        background: #000;
+        background:rgba(0,0,0,0.2);
+        transition: all .4s ease-in-out;
+        z-index: 30;
+
+    }
+    /*按钮部分*/
+    .t_hidden #btn{
+
+        position:absolute;
+        top:39px;right:60px;
+    }
+    .t_hidden #btn span{
+        display:block;
+        width:20px;
+        height: 8px;
+        border-top:3px solid #fff;
+        z-index: 30;
+    }
+
+    /*点击之后弹出部分*/
+    .big_hidden{
+        width: 100%;
+        height:100%;
+        background-color:black;
+        position:fixed;
+        top:-1000px;
+        transition: all .7s ease-in-out;
+        opacity:1;
+        z-index: 35;
+        margin:0 auto;
+        background:rgba(0,0,0,0.9);
+
+
+    }
+    .big_hidden>img{
+        position:absolute;
+        top:0;left:0;
+    }
+    .big_hidden ul{
+        float: left;
+        width: 20%;
+        height:50%;
+        color: #fff;
+        margin-top:200px;
+
+    }
+    .big_hidden ul li{
+
+        width: 80%;
+        height:80px;
+        color: #fff;
+        font-size: 20px;
+        cursor:pointer;
+
+    }
+    .big_hidden_ul{
+        margin-left:15%;
+    }
+    /*关闭按钮*/
+
+    .big_hidden .close{
+
+        width:30px;height:30px;
+        position:absolute;
+        top:29px;right:60px;
+    }
+
+
+
+
+    .big_hidden .close span{
+        display:block;
+        width:20px;
+        height: 1px;
+        border-top:3px solid #fff;
+
+    }
+    .big_hidden .close span:nth-child(1){
+        transform:rotate(45deg);
+        position:absolute;
+        top:0;right:5px;
+    }
+    .big_hidden .close span:nth-child(2){
+        transform:rotate(-45deg);
+        position:absolute;
+        top:0;left:5px;
+    }
+
+}
+
+/*pad样式*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header .common {
+
+        width: 100%;
+        height: 90px;
+        margin: 0 auto;
+        border-bottom: 1px solid gray;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transition: all .4s ease-in-out;
+    }
+    .header .common img{
+        width:25%;
+
+    }
+    .header .common .nav {
+
+        position: absolute;
+        top: 10%;
+        right: 10px;
+        /* border:1px solid red; */
+        width: 450px;
+        height: 95%;
+        overflow: hidden;
+
+    }
+
+    .header .common .nav > div > a {
+        display: block;
+        line-height: 25px;
+
+        font-size: 15px;
+        height:100%;
+    }
+
+    .header .common .nav > div > a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .header .nav > div {
+        float: left;
+        width: 16%;
+        height: 45%;
+
+        margin-left: 9px;
+        margin-top: 0px;
+        /*border:1px solid green;*/
+        transition: all .2s ease-in-out;
+
+        overflow: hidden;
+    }
+
+    .header .nav > div.clear {
+        clear: left;
+    }
+
+    /*.header .nav>div:hover{*/
+    /*transform: translateY(-25px);*/
+    /*}*/
+    /*隐藏部分*/
+    .t_hidden {
+        width: 100%;
+        height: 86px;
+        margin: 0 auto;
+
+        position: fixed;
+        top: -86px;
+        left: 0;
+        background: #000;
+        transition: all .4s ease-in-out;
+        z-index: 30;
+    }
+
+    /*按钮部分*/
+    .t_hidden #btn {
+
+        position: absolute;
+        top: 29px;
+        right: 60px;
+    }
+
+    .t_hidden #btn span {
+        display: block;
+        width: 20px;
+        height: 8px;
+        border-top: 3px solid #fff;
+
+    }
+
+    /*点击之后弹出部分*/
+    .big_hidden {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: -1000px;
+        transition: all .7s ease-in-out;
+        opacity: 0;
+        z-index: 35;
+        margin: 0 auto;
+
+    }
+
+    .big_hidden > img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .big_hidden ul {
+        float: left;
+        width: 20%;
+        height: 50%;
+        color: #fff;
+        margin-top: 200px;
+
+    }
+
+    .big_hidden ul li {
+
+        width: 50%;
+        height: 30%;
+        color: #fff;
+        font-size: 1em;
+        cursor: pointer;
+
+    }
+
+    .big_hidden_ul {
+        margin-left:15%;
+    }
+
+    /*关闭按钮*/
+    .big_hidden .close {
+
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 29px;
+        right: 60px;
+    }
+
+    .big_hidden .close span {
+        display: block;
+        width: 20px;
+        height: 1px;
+        border-top: 3px solid #fff;
+
+    }
+
+    .big_hidden .close span:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+
+    .big_hidden .close span:nth-child(2) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 0px;
+        left: 5px;
+    }
+
+}
+
+
+
+
+/*小屏幕样式*/
+@media screen and (max-width: 767px){
+    .header .common{
+
+        width:100%;
+        height:90px;
+        margin:0 auto;
+        border-bottom:1px solid gray;
+        position: fixed;
+        top:0;left:0;
+        background: #fff;
+        transition: all .4s ease-in-out;
+    }
+
+
+    .header .common .nav{
+
+        position: absolute;
+        top:40%;left:80%;
+        /* border:1px solid red; */
+        width:30%;
+        height:60%;
+        overflow: hidden;
+
+    }
+    .header .common .nav>div>a{
+        display: block;
+
+
+        font-size:15px;
+    }
+
+
+
+
+    .header .nav>div{
+        float: left;
+        width:30%;height:45%;
+
+
+        /*border:1px solid green;*/
+        transition: all .2s ease-in-out;
+
+        overflow: hidden;
+    }
+
+
+
+
+
+
+    /*.header .nav>div:hover{*/
+    /*transform: translateY(-25px);*/
+    /*}*/
+
+    /*隐藏部分*/
+    .t_hidden{
+        width:100%;
+        height:86px;
+        margin:0 auto;
+
+        position: fixed;
+        top:-86px;left:0px;
+        background: #000;
+        transition: all .4s ease-in-out;
+        z-index: 30;
+    }
+    /*按钮部分*/
+    .t_hidden #btn{
+
+        position:absolute;
+        top:40%;right:10%;
+    }
+    .t_hidden #btn span{
+        display:block;
+        width:20px;
+        height: 8px;
+        border-top:3px solid #fff;
+
+    }
+
+    /*点击之后弹出部分*/
+    .big_hidden{
+        width: 100%;
+        height:100%;
+        background-color:black;
+        position:fixed;
+        top:-1080px;
+        transition: all .7s ease-in-out;
+        opacity:1;
+        z-index: 35;
+        margin:0 auto;
+
+
+    }
+    .big_hidden>img{
+        position:absolute;
+        top:0px;left:0px;
+    }
+    .big_hidden ul{
+        float: left;
+        width: 20%;
+        height:50%;
+        color: #fff;
+        margin-top:200px;
+
+    }
+    .big_hidden ul li{
+
+        width: 50%;
+        height:30%;
+        color: #fff;
+        font-size: 1em;
+        cursor:pointer;
+
+    }
+    .big_hidden_ul{
+        margin-left:15%;
+    }
+    /*关闭按钮*/
+
+    .big_hidden .close{
+
+        width:30px;height:30px;
+        position:absolute;
+        top:20%;right:10%;
+    }
+
+
+
+
+    .big_hidden .close span{
+        display:block;
+        width:20px;
+        height: 1px;
+        border-top:3px solid #fff;
+
+    }
+    .big_hidden .close span:nth-child(1){
+        transform:rotate(45deg);
+        position:absolute;
+        top:0px;right:5px;
+    }
+    .big_hidden .close span:nth-child(2){
+        transform:rotate(-45deg);
+        position:absolute;
+        top:0px;left:5px;
+    }
+
+    .phone{
+        display: none;
+    }
+}
+
+
+
+

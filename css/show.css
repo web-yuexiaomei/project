@@ -1,0 +1,252 @@
+	body{
+		margin:0;
+		box-sizing:border-box;
+		font-family:"微软雅黑";
+		overflow:hidden;
+		color:#738299;
+		height:100%;
+/*				background:url(../img/intro/bg1.jpg) no-repeat;*/
+/*				background-size:cover;*/
+	}
+	html{
+		overflow:hidden;
+		height:100%;
+	}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dd,dl{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+  color:#666;
+}
+
+ 
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+	/*头部的样式*/
+	div.y_header{
+		width:980px;
+		height:100px;
+		line-height: 100px;
+		margin: 0 auto;
+		text-align: right;
+	}
+	/*头部中logo的样式*/
+	div.y_header>a>img{
+		float: left;
+		margin-top:20px;
+	}
+	/*头部中小喇叭的样式*/
+	div.y_header>a>span{
+		display: inline-block;
+		width:28px;
+		height:20px;
+		position: relative;
+		top:5px;
+		left:2px;
+		background: url(../img/register/icons.png) no-repeat;
+	}
+	/*头部中文字广告的样式*/
+	div.y_header>a>font{
+		font-size: 24px;
+		color:#738299;
+		padding: 0 20px 0 8px;
+	}
+	.big{
+		width:75%;
+		height:650px;
+		position:relative;
+		margin:0 auto;
+		background:url(../img/intro/bg1.jpg) no-repeat;
+		background-position:cover;
+	}
+	.big:before{
+		content:"";
+		display:table;
+	}
+	.midden{
+		width:680px;
+		height:500px;
+		margin:0 auto;
+		margin-top:50px;
+		transform-style:preserve-3d;
+		transform:rotateY(0deg) rotateX(30deg);
+	}
+	.cube{
+		width:300px;
+		height:187px;
+		position:absolute;
+		top:162px;
+		left:190px;
+		background-size:cover;
+		box-sizing:border-box;
+		opacity:0.8;
+	}
+	.one{
+		transform:rotateY(0deg) translateZ(260px);
+        background:url(../img/intro/1.jpg) no-repeat 100% 100%;
+	}
+	.two{
+		transform:rotateY(60deg) translateZ(260px);
+		background:url(../img/intro/2.jpg);
+		background-repeat:no-repeat;
+
+	}
+	.three{
+		transform:rotateY(-60deg) translateZ(260px);
+		background:url(../img/intro/3.jpg);
+	}
+	.four{
+		transform:rotateY(120deg) translateZ(260px);
+		background:url(../img/intro/4.jpg);
+	}
+	.five{
+		transform:rotateY(-120deg) translateZ(260px);
+		background:url(../img/intro/5.jpg);
+	}
+	.six{
+		transform:rotateY(-180deg) translateZ(260px);
+		background:url(../img/intro/6.jpg);
+	}
+	.tu_hidden{
+		width:0px;
+		height:0px;
+		position:fixed;
+		top:50%;
+		left:50%;
+		z-index:2;
+		transition:all 1s linear;
+/*		overflow:hidden;*/
+		background:rgb(134,167,229);
+		border-radius:5px;
+	}
+	.tu_show{
+		width:650px;
+		height:550px;
+		position:fixed;
+		top:19%;
+		left:26.5%;
+/*		z-index:2;*/
+		transition:all 1s linear;
+		overflow:hidden;
+		background:rgb(196,211,242);
+		border-radius:5px;
+		color:rgb(62,64,64);
+	}
+	.ys{
+		width:610%;
+		height:100%;	
+		border-radius:5px;
+		transition:all 5s linear;
+		background:rgb(142,170,240);
+		margin-left:0px;
+		overflow:hidden;
+	}
+	.one_y,.two_y,.three_y,.four_y,.five_y,.six_y{
+		width:650px;
+		height:100%;
+		z-index:2;
+		
+		float:left;
+	}  
+	.left{
+		height:100%;
+		width:300px;
+/*		border:1px solid red;*/
+		float:left;
+		text-align:center;
+		box-sizing:border-box;
+		float:left;
+	}
+	.right{
+		height:100%;
+		width:348px;
+		 float:left; 
+		box-sizing:border-box;
+		overflow:hidden;
+		transition:all 1.5s ease-out 2s;		
+		opacity:1;
+/*		background:pink;*/
+		margin-left:-300px;
+	}
+	.l_top{
+		width:300px;
+		height:187px;
+/*		border:1px solid red;*/
+		position:relative;
+		left:2px;
+		top:2px;
+	}
+	.l_bottom h3{
+		font-size:22px;
+		margin:40px 0 40px 0;
+	}
+	#div1{
+		width:300px;
+		height:200px;
+		
+		position:relative;
+		left:2px;
+	}
+	.addClass{
+		z-index:3;
+	}
+	.r_top{
+		width:100%;
+		height:30%;
+		
+	}
+	.right>div.r_bottom{
+		width:100%;
+		height:70%;
+	}
+	.title1{
+		width:96%;
+		padding:5px;
+		font-size:20px;
+/*		border:1px solid red;*/
+		transition:all 1.5s ease-out 4s;
+		text-indent:5px;
+		text-align:left;
+		margin-top:20px;
+		padding-left:20px;
+		}
+	.right>div.r_bottom>div.title1{
+		
+		margin-top:-70%;
+	}
+	.show1{
+		width:100%;
+		padding:10px 10px 0 30px;
+		font-size:20px;
+		font-family:"宋体";
+		overflow:hidden;
+		box-sizing:border-box;
+		height:100%;
+	
+	}
+	.right>div.r_top>div.show1{
+		height:0px;
+		transition:all 1.5s ease-out 6s;
+		
+
+	}
+	.right>div.r_bottom>div.show1{
+		height:0;
+		transition:all 1.5s ease-out 7.5s;
+		
+	}
+	.right_hidden{
+		overflow:hidden;
+		width:0;
+		height:0;
+		opacity:0;
+		transition:all 0.5s linear;
+	}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册</title>
+	<link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <script src="../js/less.min.js"></script>
+</head>
+<body>
+    <div class="y_register_mian">
+        <!--1 头部的logo和做营销上皇室科技-->
+        <div class="y_header">
+            <!--1.1 头部logo-->
+            <a href="#" title="点击可打开皇室科技网">
+                <img src="../img/register/lg.png" alt="">
+            </a>
+            <a href="#" title="点击可打开皇室科技网">
+                <!--1.2 头部的小喇叭-->
+                <span></span>
+                <!--1.3 头部的广告字-->
+                <font>做营销，上皇室科技网</font>
+            </a>
+        </div>
+        <!--2.注册板块-->
+        <div class="y_m">
+            <!--2.1 上面的渐变条-->
+            <img src="../img/register/lineBg.jpg">
+            <!--2.2 中间的表单部分-->
+            <div class="y_form">
+                <form action="">
+                    <!--账号-->
+                    <p>
+                        <span class="y_number">&nbsp;&nbsp;账号</span>
+                        <span class="y_font_show y_phone">&nbsp;&nbsp;手机</span>
+                        <span class="y_font_show y_email">&nbsp;&nbsp;邮箱</span>
+                        <input type="text" name="uname" placeholder="请输入手机号码或邮箱" value="" autocomplete="off">
+                        <span class="y_show y1"></span>
+                        <span class="y_font_show y_msg_number">请输入正确的手机号码或邮箱</span>
+                    </p>
+                    <!--密码-->
+                    <p>&nbsp;&nbsp;密码
+                        <input type="password" name="upwd" placeholder="4-20个字符，区分大小写" autoComplete="off">
+                        <span class="y_show y2"></span>
+                        <span class="y_font_show y_msg_upwd">密码由4-20个字符组成，区分大小写</span>
+                    </p>
+                    <!--验证码-->
+                    <p>
+                        验证码<input type="text" name="code"  placeholder="请输入验证码" class="y_code_input">
+                        <span class="y_test">获取验证码</span>
+                        <span class="y_show y3"></span>
+                        <span class="y_font_show y_msg_code">验证码有误</span>
+                        <p class="y_code">
+                            <img src="../data/register/getCode.php" title="看不清换一张">
+                        </p>
+                    </p>
+                    <!--已阅读并同意-->
+                    <p class="y_checkbox">
+                        <input type="checkbox" name="checkbox" class="checkbox" id="y_check">
+                        <a href="#" class="agree">
+                            <label for="y_check">我同意 《服务条款》及 《法律声明》</label>
+                        </a>
+                    </p>
+                    <!--免费注册-->
+                    <p>
+                        <a href="#" class="y_btn">免费注册</a>
+                    </p>
+                    <!--已有账号，直接登录-->
+                    <p>
+                        <span>已有账号？</span>
+                        <a href="mzlogin.html" class="y_submit">直接登录</a>
+                    </p>
+                </form>
+            </div>
+            <!--2.3 底部的文字部分-->
+            <p>Copyright &copy; 2010-2018 广州皇室互联网科技股份有限公司 </p>
+        </div>
+    </div>
+    <!--canvas背景的绘制-->
+    <div class="y_canvas">
+        <canvas id="y_register1" width="3000px" height="150px"></canvas>
+        <canvas id="y_register2" width="3000px" height="150px"></canvas>
+        <canvas id="y_register3" width="3000px" height="150px"></canvas>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bg.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

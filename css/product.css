@@ -1,0 +1,703 @@
+*{box-sizing: border-box}
+body{
+    margin:0;
+    background: #f6f6f6;
+    width:100%;
+    font-family:"微软雅黑";
+    font-size: 1em;
+}
+/*header*/
+#header{
+    height:86px;
+    position: fixed;
+    z-index: 10;
+}
+.y_mian{
+    margin: 0 auto;
+    min-height: 650px;
+    width:85%;
+    margin-top:68px;
+}
+/*banner 部分*/
+/*轮播图片*/
+.y_banner{
+    width:100%;
+    height:575px;
+    position: relative;
+    overflow: hidden;
+}
+.y_b{
+    position:relative;
+    margin-top:60px;
+}
+#slide {
+    margin: 0 auto;
+    width: 760px;
+    height: 330px;
+    position: relative;
+}
+#slide li {
+    position: absolute;
+    width:760px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    background:#fff;
+    overflow:hidden;
+    box-shadow: 0 0 20px #1d374d;
+}
+
+#slide li img {
+    width: 100%;
+    height: 100%;
+}
+.slide_left{
+    /* width:240px;*/
+}
+.slide_right{
+    /* width:440px;*/
+    padding: 40px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+.slide_right h3{
+    font: 400 30px/18px "Microsoft Yahei";
+    color:#222222;
+}
+.slide_right h3 span{
+    display:inline-block;
+    margin-left:10px;
+    font: 400 14px/36px "Microsoft Yahei";
+    color:#555555;
+}
+.slide_right p{
+    padding:20px 0 30px;
+    color:#555555;
+    font: 400 14px/24px "Microsoft Yahei";
+    border-bottom: 1px solid #dbdbdb;
+}
+.slide_right dl{
+    padding-top:30px;
+}
+.slide_right dd{
+    float: left;
+    width:33.3%;
+    color:#777;
+    font: 400 12px/24px "Microsoft Yahei";
+
+}
+.slide_right dd h3{
+    color:#ff9000;
+    margin-bottom:20px;
+}
+.arrow {
+    /* display: none;*/
+}
+.arrow .prev,
+.arrow .next {
+    position: absolute;
+    width: 64px;
+    top: 38%;
+    z-index: 9;
+    font: 700 96px 'simsun';
+    opacity: 0.3;
+    color: #fff;
+    cursor: pointer;
+}
+.arrow .prev {
+    left: -220px;
+}
+.arrow .next {
+    right: -220px;
+}
+.arrow .prev:hover,
+.arrow .next:hover {
+    color: #00a0e9;
+    opacity: .7;
+}
+/*<!--2.动态数字生成-->*/
+.y_numberBar,.y_numberShow{
+    width:100%;
+}
+/**<!--2.动态数字生成里面的li 样式-->*!*/
+.y_number_list{
+    display: inline-block;
+    width:33%;
+    height:200px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/**<!--2.动态数字生成里面的数字的 样式-->*!*/
+.y_number_list .y_num{
+    font-size: 40px;
+}
+/**<!--2.动态数字生成里面的+ 号的 样式-->*!*/
+.y_number_list .y_char{
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+}
+/**<!--2.动态数字生成里面的数字描述的文字 样式-->*!*/
+.y_number_list .y_num_desc{
+    color:#666;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: -7px;
+}
+/*<!--楼层的标题-->*/
+.y_floor>.y_headline{
+    width:100%;
+    height:130px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*颠覆传统建站*/
+.y_headline>.y_title{
+    font-size: 50px;
+}
+/*<!--楼层的标题描述-->*/
+.y_headline>.y_msg{
+    font-size: 16px;
+    margin-top: 15px;
+    color: #666;
+}
+/*<!--3.楼层一 建站-->*/
+.y_floor1{
+    width:100%;
+    min-height: 650px;
+}
+/*<!--3.2楼层的主体-->*/
+.y_floor1>.y_contain{
+    width:100%;
+}
+.y_floor1>.y_contain .y_mian_list{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*< !--3.2楼层的主体 建站的类别里面的hover出现的整个正方形样式*/
+.y_floor1>.y_contain .y_mian_item .y_info_top{
+    width: 236px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+    transition: all 1s linear;
+    overflow: hidden;
+}
+/*正方形上面的蓝色部分*/
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap{
+    width:146px;
+    height:146px;
+    border-radius:50%;
+    background:linear-gradient(90deg,#3eb5f8,#06e5f8);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left:45px;
+    top:0px;
+    transition: all .5s linear;
+    overflow: hidden;
+}
+/*第二个背景颜色*/
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap2{
+    background:linear-gradient(90deg,#64edea,#64aaf2);
+}
+/*第三个背景颜色*/
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap3{
+    background:linear-gradient(90deg,#f8c84c,#f8788b);
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap4{
+    background:linear-gradient(145deg,#f26768,#f65589);
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap5{
+    background:linear-gradient(145deg,#fe80fb,#c467ff);
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap6{
+    background:linear-gradient(145deg,#32dab7,#38cf7a);
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap7{
+    background:linear-gradient(145deg,#44aaf8,#b376ff);
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_wrap8{
+    background:linear-gradient(145deg,#7ee1f9,#6cbaf8);
+}
+/*圆形里面的背景图标*/
+.y_info_bg{
+    display: inline-block;
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    bottom:27%;
+    left:20%;
+    background: url(../img/y_product/home_ico.png) no-repeat -890px -1191px;
+}
+/*第二个圆形里面的背景图标*/
+.y_info_bg2{
+    background-position:-895px -1300px;
+}
+.y_info_bg3{
+    background-position:-886px -1402px;
+}
+.y_info_bg4{
+    background-position:-899px -1500px;
+}
+.y_info_bg5{
+    background-position:-1004px -1497px;
+}
+.y_info_bg6{
+    background-position:-1008px -1401px;
+}
+.y_info_bg7{
+    background-position:-1009px -1298px;
+}
+.y_info_bg8{
+    background-position:-1009px -1194px;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_bottom{
+    position: absolute;
+    bottom:77px;
+    left:86px;
+    font-size: 16px;
+    color: #666;
+    opacity: 1;
+    z-index: 3;
+    transition: all 0.5s linear;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_font{
+    opacity: 0;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_title{
+    font-size: 16px;
+    padding-top: 25px;
+    margin-bottom: 18px;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_info_desc{
+    font-size: 13px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    width:236px;
+}
+/*免费拥有a标签的按钮*/
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_btn_set{
+    display: block;
+    width:100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index:3 ;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_btn_set:hover{
+    color: #666;
+    background: #fff;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_btn_desc{
+    position: absolute;
+    bottom: 6px;
+    left: 23px;
+}
+/*免费拥有a标签的按钮里面的发光的白色边*/
+@keyframes circle {
+    0%{
+        width:0px;
+        height: 0px;
+    }
+    10%{
+        width: 10px;
+        height: 10px;
+    }
+    30%{
+        width: 30px;
+        height: 30px;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_anim:before{
+    display: block;
+    content: '';
+    position: relative;
+    z-index:1;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    transition: all 0.5s linear;
+    animation: circle 1s infinite;
+}
+/*<!--<!--建站的类别--> 下面的文字部分-->*/
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_box{
+    height: 159px;
+    width: 236px;
+    text-align: center;
+    padding-top: 40px;
+    opacity: 0;
+    transition: all 0.5s linear;
+    position: relative;
+    z-index: 2;
+}
+.y_floor1>.y_contain .y_mian_item .y_info_top .y_box .y_box_title{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+y_floor1>.y_contain .y_info_top:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+    width: 236px;
+    height: 300px;
+}
+.y_floor1>.y_contain .y_mian_item:hover .y_info_top {
+    opacity: 1;
+    width: 236px;
+    height: 300px;
+}
+.y_floor1>.y_contain .y_mian_item:hover .y_info_wrap{
+    width: 236px;
+    height: 159px;
+    border-radius: 30px 30px 0 0;
+    left: -2px;
+    top:-8px;
+}
+.y_floor1>.y_contain .y_mian_item:hover .y_font{
+    opacity: 1;
+}
+.y_floor1>.y_contain .y_mian_item:hover .y_info_bg{
+    opacity: 0;
+}
+.y_floor1>.y_contain .y_mian_item:hover .y_bottom{
+    opacity: 0;
+    bottom: 80px;
+}
+.y_floor1>.y_contain .y_mian_item:hover .y_box {
+    opacity: 1;
+}
+/*<!--4.楼层二微传单-->*/
+/*<!--4.2楼层的主体-->*/
+#echart{
+    width:100%;
+    height:600px;
+    margin-bottom: 30px;
+}
+/*<!--5.楼层三轻站小程序-->*/
+.y_floor3 .y_content{
+    width:100%;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+/*<!--5.楼层三轻站小程序 里面的li 模块样式-->*/
+.y_floor3 .y_content>.y_content_item{
+    width:23%;
+    height:382px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    left:-80px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+    transition: left 1s linear;
+}
+/*<!--5.楼层三轻站小程序 里面的图片模块样式-->*/
+.y_img{
+    width:100%;
+}
+/*<!--5.楼层三轻站小程序 里面的图片的描述样式-->*/
+.y_img_wrapper{
+    position: absolute;
+    width:100%;
+    left:0;
+    bottom:5%;
+    text-align: center;
+}
+.y_img_wrapper>h4{
+    color:#333;
+    margin-bottom: 15px;
+}
+.y_img_wrapper>h5{
+    width:100%;
+    color:#666;
+    margin-bottom: 20px;
+}
+/*<!--6.楼层四 公众号助手-->*/
+.y_floor4 .y_contain>.y_moudleBox{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width:100%;
+}
+.y_floor4 .y_contain>.y_moudleBox .y_moudle_hidden{
+    height:0px;
+    width:100%;
+    overflow: hidden;
+    transition: height 2s linear;
+}
+.y_floor4 .y_contain>.y_moudleBox>li{
+    height:308px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.y_floor4 .y_contain>.y_moudleBox>li .y_moudle_intro{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    padding: 0 8px;
+}
+.y_floor4 .y_contain>.y_moudleBox>li .y_moudle_intro h3{
+     font-size:18px;
+     color: #4c566c;
+     margin-bottom: 11px;
+     line-height: 18px;
+ }
+.y_floor4 .y_contain>.y_moudleBox>li .y_moudle_intro p{
+    color: #979ba0;
+    margin-bottom: 11px;
+    line-height: 20px;
+    font-size:14px;
+    width:96%;
+}
+/*<!--右侧固定的联系模块-->*/
+.y_toolList{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0%;
+    top:40%;
+    z-index: 10;
+}
+/*<!--右侧固定的联系模块里面的li样式-->*/
+.y_toolList>li{
+    width: 79px;
+    height:79px;
+    margin-bottom: 20px;
+    background: url(../img/y_product/home_ico.png) no-repeat -1505px -90px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+/*<!--右侧固定的联系模块里面的第二个li样式-->*/
+.y_toolList>.y_tool_item2{
+    width:60px;
+    height:60px;
+    background: #fff;
+    margin-left:12px ;
+}
+/*<!--右侧固定的联系模块里面的第二个li样式 里面反馈的样式-->*/
+.y_toolList>.y_tool_item2 span{
+    position: absolute;
+    left:15px;
+    top:19px;
+    opacity: 0;
+    font-size: 16px;
+    color: #333;
+    transition: opacity 0.3s;
+}
+.y_toolList>.y_tool_item2:hover span{
+    opacity: 1;
+}
+.y_toolList>.y_tool_item2:hover .y_icon2{
+    opacity:0;
+}
+/*<!--右侧固定的联系模块里面的第三个li样式-->*/
+.y_toolList>.y_tool_item3{
+    width:60px;
+    height:60px;
+    background: #fff;
+    margin-left:12px ;
+    opacity: 0;
+}
+/*隐藏的div样式*/
+.y_toolList .y_subHidden{
+    position: absolute;
+    width:0px;
+    right: 100px;
+    height:330px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    border-radius: 5px;
+
+}
+.y_toolList .y_subArea{
+    width: 182px;
+}
+/*第一个li的hover样式 显示左侧的联系方式*/
+.y_toolList .y_tool_item1:hover .y_subHidden{
+    width:182px;
+}
+/*<!--上面的电话咨询-->*/
+.y_toolList .y_subArea .y_ask_t{
+    font-size: 16px;
+    height:86px;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    cursor: default;
+    background:url(../img/y_product/home_ico.png) no-repeat -296px -1236px;
+}
+/*<!--上面的电话咨询里面的电话图标-->*/
+.y_toolList .y_subArea .y_icon_tel{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left:27px;
+    top:35px;
+    background:url(../img/y_product/home_ico.png) no-repeat -297px -1077px;
+}
+.y_toolList .y_subArea .y_ask_num{
+    padding-left: 37px;
+}
+/*<!--中间的QQ咨询-->*/
+.y_toolList .y_subArea .y_ask_m{
+    padding: 30px 0 25px 32px;
+    font-size: 18px;
+    color: #4ca5ee;
+    text-align: center;
+    cursor: default;
+    position: relative;
+}
+/*<!--中间的QQ咨询的小图标-->*/
+.y_toolList .y_subArea .y_icon_QQ{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left:22%;
+    top:36%;
+    background:url(../img/y_product/home_ico.png) no-repeat -356px -1075px;
+}
+/*<!--底部的客服等-->*/
+.y_toolList .y_subArea .y_ask_b a{
+    font-family: '微软雅黑';
+    font-size: 16px;
+    display: block;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto 16px auto;
+    background: #4fbce8;
+    color: #fff;
+    line-height: 30px;
+}
+.y_toolList>li i{
+    display: inline-block;
+    position: absolute;
+    left: 34%;
+    top:30%;
+    width:30px;
+    height:30px;
+    background:url(../img/y_product/home_ico.png) no-repeat -428px -1075px;
+}
+.y_toolList>li .y_icon2{
+    left:35%;
+    top:36%;
+     background-position:-498px -1080px;
+ }
+.y_toolList>li .y_icon3{
+    left:33%;
+    top:30%;
+    background-position:-553px -1080px;
+}
+/*针对PC屏幕的媒体查询 浏览器宽度大于992*/
+@media screen and (min-width: 992px){
+    /*banner 部分*/
+    .y_banner{
+        width:100%;
+    }
+    .y_number_list{
+        display: inline-block;
+        width:33%;
+        height:150px;
+    }
+    /*<!--3.2楼层的主体  建站的类别-->*/
+    .y_floor1>.y_contain .y_mian_item{
+        width:25%;
+        height:207px;
+        margin-bottom: 110px;
+        position: relative;
+    }
+    /*<!--5.楼层三轻站小程序 里面的li 模块样式-->*/
+    .y_floor3 .y_content>.y_content_item{
+        width:23%;
+        height:382px;
+    }
+    /*<!--6.楼层四 公众号助手-->*/
+    .y_floor4 .y_contain>.y_moudleBox>li{
+        width:23%;
+        height:308px;
+    }
+}
+/*针对于PAD屏幕媒体查询*/
+@media screen and (min-width: 768px) and (max-width:991px){
+    /*banner 部分*/
+    .y_banner{
+        width:100%;
+    }
+    .y_number_list{
+        display: inline-block;
+        width:100%;
+        height:150px;
+    }
+    /*<!--3.2楼层的主体  建站的类别-->*/
+    .y_floor1>.y_contain .y_mian_item{
+        width:50%;
+        height:207px;
+        margin-bottom: 110px;
+        position: relative;
+    }
+    /*<!--5.楼层三轻站小程序 里面的li 模块样式-->*/
+    .y_floor3 .y_content>.y_content_item{
+        width:47%;
+        height:382px;
+    }
+    /*<!--6.楼层四 公众号助手-->*/
+    .y_floor4 .y_contain>.y_moudleBox>li{
+        width:47%;
+        height:308px;
+    }
+
+}
+/*针对于PHONE屏幕媒体查询*/
+@media screen and (max-width: 767px){
+    .y_banner{
+        width:100%;
+    }
+    .y_number_list{
+        display: inline-block;
+        width:100%;
+        height:150px;
+    }
+    /*<!--3.2楼层的主体  建站的类别-->*/
+    .y_floor1>.y_contain .y_mian_item{
+        width:100%;
+        height:207px;
+        margin-bottom: 110px;
+        position: relative;
+    }
+    /*<!--5.楼层三轻站小程序 里面的li 模块样式-->*/
+    .y_floor3 .y_content>.y_content_item{
+        width:97%;
+        height:382px;
+    }
+    /*<!--6.楼层四 公众号助手-->*/
+    .y_floor4 .y_contain>.y_moudleBox>li{
+        width:97%;
+        height:308px;
+    }
+}

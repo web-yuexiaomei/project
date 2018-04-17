@@ -1,0 +1,221 @@
+/*<!--皇室公告模块-->*/
+.y_bg{
+    width:100%;
+    height:760px;
+    background: url(../img/index/bg4.jpg) 100% 100% no-repeat;
+    background-size: cover;
+	height:100%;
+}
+.y_bg::before{
+    content: "";
+    display: table;
+}
+.y_floor5{
+    width:1100px;
+    margin:0 auto;
+    margin-top:170px;
+    padding-left: 30px;
+}
+.y_floor5 a{
+    color:#fff;
+}
+/*<!--皇室公告news标题-->*/
+.y_floor5>.y_title{
+    padding-left:5px;
+    position: relative;
+    transition: all 0.5s;
+    transition-delay: 600ms;
+    margin-top:30px;
+}
+.y_floor5>.y_title>.y_title_img{
+    position: relative;
+    left:-80px;
+    transition: all 0.8s;
+}
+/*<!--皇室公告的nav 样式-->*/
+ul.y_nav,.y_sort{
+    display: inline-block;
+}
+/*<!--皇室公告的"告"字 样式-->*/
+.y_floor5>.y_title>ul.y_nav>li{
+    position: relative;
+    left:-95px;
+    top:-72px;
+    display: inline;
+    margin-right: 15px;
+}
+.y_floor5>.y_title>ul.y_nav .y_gao{
+    position:relative;
+    display: inline-block;
+    width:46px;
+    height:46px;
+    transition: all 0.8s;
+}
+.y_gao:before,.y_gao:after{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius: 50%;
+}
+.y_gao:before{
+    width:46px;
+    height:46px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.y_gao:after{
+    width:46px;
+    height:46px;
+    border: 1px solid #fff;
+    opacity:0;
+    transform: scale(0.5,0.5);
+    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.y_floor5>.y_title>ul.y_nav li:hover .y_gao:before{
+    opacity:0;
+    transform: scale(1.5,1.5);
+}
+.y_floor5>.y_title>ul.y_nav li:hover .y_gao:after{
+    opacity:1;
+    transform: scale(1,1);
+}
+/*<!--皇室公告的显示更多的 样式-->*/
+.y_floor5>.y_title>.y_sort{
+    position:absolute;
+    right:430px;
+    top:25px;
+    color:#fff;
+	left:527px;
+	top:60px;
+}
+.y_floor5>.y_title>.y_sort>dd:hover{
+    text-decoration: underline;
+}
+/*<!--皇室公告内容展示-->*/
+.y_floor5 .y_news{
+    padding-left: 5px;
+}
+.y_floor5 .y_news>.y_news_list>li{
+    display: inline-block;
+    width:228px;
+    height:250px;
+    overflow: hidden;
+    margin-right:30px;
+    transition-delay: 1s;
+    position: relative;
+}
+/*<!--皇室公告内容展示显示部分-->*/
+.y_floor5 .y_news .y_view{
+    position: absolute;
+    bottom: 0px;
+    width: 228px;
+    height: 250px;
+    overflow: hidden;
+    background: rgb(255,255,255);
+    border-radius: 1px;
+}
+/*<!--皇室公告内容展示显示部分---上面的日期展示-->*/
+.y_floor5 .y_news .y_view>.y_date{
+    position: absolute;
+    right:50px;
+    top:23px;
+    color: #5D5D5E;
+}
+.y_floor5 .y_news .y_view>.y_date big{
+    font-size: 50px;
+    font-family: impact;
+    color: #5D5D5E;
+}
+.y_floor5 .y_news .y_view>.y_date span{
+    position: absolute;
+    background: #fff;
+    left:18px;
+    top:42px;
+    padding: 0 5px;
+    font-family: Arial;
+    font-size: 14px;
+    width:66px;
+}
+/*<!--下面的图片和文字展示-->*/
+.y_floor5 .y_news .y_view>.y_img{
+    /*height:90px;*/
+    color: #000;
+    margin-top: 95px;
+    margin-left: 40px;
+}
+.y_floor5 .y_news .y_view>.y_img>h4{
+    font-size: 14px;
+    width:150px;
+    font-weight: 300;
+    color: #000;
+    margin-top: 25px;
+}
+/*<!--当有hover触发事件时的公告详细展示-->*/
+.y_floor5 .y_news .y_mask{
+    position: absolute;
+    bottom:0;
+    left:0;
+    z-index: 2;
+    width:228px;
+    padding:0px 30px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    overflow: hidden;
+    height:0px;
+}
+.y_floor5 .y_news .y_mask h4{
+    margin: 10px 0px;
+}
+/*<!--当有hover触发事件时的公告详细展示   分割线样式-->*/
+.y_floor5 .y_news .y_mask hr{
+    width:37px;
+    height:1px;
+    background: #fff;
+    border:none;
+    margin: 10px 0px 10px 0px;
+}
+.y_floor5 .y_news .y_mask1{
+    background: #b9922e none repeat scroll 0 0;
+}
+.y_floor5 .y_news .y_mask2{
+    background: #216fc5 none repeat scroll 0 0;
+	font-size:14px;
+}
+.y_floor5 .y_news .y_mask3{
+    background:#003d78 none repeat scroll 0 0;
+}
+.y_floor5 .y_news .y_mask4{
+    background:#f60022 none repeat scroll 0 0;
+}
+.y_floor5 .y_news li:hover .y_mask{
+    height: 250px;
+    cursor: pointer;
+    padding: 20px 30px;
+}
+/*加载时，显示的样式*/
+.y_floor5 .y_news .y_view1{
+    top:90px;
+    left:60px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.y_floor5 .y_news .y_view2{
+    top:100px;
+    left:60px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.y_floor5 .y_news .y_view3{
+    top:150px;
+    left:60px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.y_floor5 .y_news .y_view4{
+    top:200px;
+    left:60px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}

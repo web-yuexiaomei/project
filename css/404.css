@@ -1,0 +1,130 @@
+body {
+    background: url(../img/index/z_bg2.jpg)no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+
+}
+h1:nth-child(1){
+    color: #000;
+    text-shadow: 1px 1px 2px #fff;
+    font-size: 3.5em;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 500;
+    margin: 1em 0 .5em;
+    text-transform: capitalize;
+    font-family:STLiti;
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ff0000;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #ff0000;
+    transition: all 500ms linear;
+}
+
+
+a {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 12px 35px;
+    text-transform: uppercase;
+    background: #ff4c4c;
+    display: inline-block;
+    border: 2px solid #ff4c4c;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    text-decoration:none;
+    position: absolute;
+    top:300%;
+    left: 46%;
+
+}
+
+a:hover {
+    color: #000;
+    background:#fff;
+    border: 2px solid #fff;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+
+
+h3{
+    color: #fff;
+    width: 59%;
+    text-align: center;
+    margin: 2em auto 1.5em;
+    line-height: 30px;
+    font-size: 1.1em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    position: absolute;
+    top:250%;
+    left: 22%;
+}
+h4{
+    color: #fff;
+    width: 59%;
+    text-align: center;
+    margin: 2em auto 1.5em;
+    line-height: 30px;
+    font-size: 1.1em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    position: absolute;
+    top:320%;
+    left: 21.5%;
+}
+
+p{
+    color: #fff;
+    width: 59%;
+    text-align: center;
+    margin: 2em auto 1.5em;
+    line-height: 30px;
+    font-size: 0.9em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    position: absolute;
+    top:360%;
+    left: 22%;
+}
+span{
+    color: #000;
+}
+div>div{
+    margin-top: 100px;
+}
+@media(max-width:1440px) {
+    .main-w3layouts h1 {
+        font-size: 5em;
+        margin: 0.5em 0 0em;
+    }
+}

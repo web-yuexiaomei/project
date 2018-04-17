@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="../css/mzlogin.css">
+	 
+</head>
+<body> 
+<div class="main">
+       <!-- 顶部字体 -->
+	  <div class="title">
+	   <img src="../img/login/lg.png" alt="">
+	   <span>做营销,上皇室科技网</span>  
+	  </div>
+
+
+	  <!-- 登录页面 -->
+	  <div class="center">
+      <!-- 插入背景图片 -->
+     
+	    <table></table>
+	    <!-- 注册块 -->
+        <div class= "black">
+             <img src="../img/login/lineBg.jpg" alt="" class="line">  
+            <form  method=""  id="login">
+               <table></table>
+
+                <p class="one">皇室科技帐号登录</p>
+
+                <input type="text"  name="uname" id="uname"  
+                placeholder="&nbsp;&nbsp;&nbsp;请输入您的用户名或邮箱">
+                <span></span>
+
+                <input type="password" name="upwd"  id="upwd"
+                placeholder="&nbsp;&nbsp;&nbsp;请输入您的密码">
+                <span></span>
+
+                <!-- 验证码 -->
+               <div>
+                   <img id="setYzm"  title="看不清点击换一张" src="../data/01_code.php"/>
+                   <input id="yzm" type="text"  placeholder="&nbsp;&nbsp;&nbsp;请输入验证码"  />
+               </div>
+                 
+             
+              <!-- 登录按钮 -->
+              <div>
+                <button class="btn btn-default submit" href="index.html" id="btn">&nbsp;登&nbsp;录&nbsp;</button>
+              </div>
+ 
+                <p class="last">
+			          <a href="register.html" >注册</a>
+                   <input type="checkbox" class="check_box">记住密码
+			         </p>
+               <a href=""><img src=" " alt="" class="wechat"></a>
+               <a href=""><img src=" " alt="" class="sina"></a>
+               <p class="banquan">Copyright © 2010-2018 皇室互联网科技股份有限公司</p>
+         </form>
+        </div>
+	  </div>
+     <!--canvas背景的绘制-->
+    <div class="y_canvas">
+        <canvas id="y_register1" width="3000px" height="150px"></canvas>
+        <canvas id="y_register2" width="3000px" height="150px"></canvas>
+        <canvas id="y_register3" width="3000px" height="150px"></canvas>
+    </div>
+
+	  
+</div>
+<script src="../js/jquery.js"></script> 
+<script src="../js/mzlogin.js"></script>
+
+ <script src="../js/bg.js"></script>
+ 
+
+</body>
+</html>

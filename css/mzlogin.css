@@ -1,0 +1,168 @@
+.main{
+	margin:0 auto;
+	padding: 0;
+	width:100%;
+}
+ 
+ .title{
+ 	width:100%;
+	height:98px;
+	line-height: 68px;
+	background-color: #fff;
+	position:relative;
+ }
+ .title span{
+    margin-left: 78px;
+    color: #1788e8;
+    font-size: 18px;
+    font-family:"微软雅黑",Arial,"黑体";
+    position:absolute;
+    top:20px;
+    right:250px;  
+  
+}
+.title>img{
+position:absolute;
+    top:20px;
+    left:150px; 
+	 	
+}
+ /*中央背景图片*/
+ .center>img{
+ 	
+ 	width:80%;
+
+ 	 
+ }
+.center{
+	width: 100%;
+	 height:600px; 
+	/*background:url(../img/entry/3.jpg) no-repeat  0%  0%;*/
+
+    background-color: #fff;
+	position:relative;
+	 
+}
+
+   /*登录框*/
+.center .black{
+	width:830px;
+	height:619px;
+	text-align: center; 
+	 margin:0 auto;
+ border-radius: 2px;
+background: #fff;
+  box-shadow: 0 0 9px 0 rgba(0,72,255,0.7);
+   overflow: hidden;   
+	 
+}	 
+.center .black .line{
+    position: relative;
+    top:-7px;
+}	
+    
+
+  /*帐号登录*/
+.black .one{
+   margin-top: 50px;
+   margin-left: -11px;
+   color: #1788e8;
+    font-size: 20px;
+     font-family:"微软雅黑",Arial,"黑体";
+}
+input{
+    padding-left: 8px;
+}
+#uname{
+	width:277px;
+	height:33px;
+	 display:block; margin:0 auto;
+	margin-top:30px;
+    background:url(../img/logo/yhm.png) no-repeat  95% center;
+    background-color: #fff;
+     border: 1px solid #1788e8;
+    border-radius:3px;
+}
+#upwd,#yzm{
+
+	width:277px;
+	height:33px;
+   display:block;
+   margin:0 auto;
+	margin-top:30px;
+   
+    background-color: #fff;
+     border: 1px solid #1788e8;
+    border-radius:3px;
+}
+#setYzm{
+	width:160px;
+	height:40px;
+    margin-top:23px;
+}
+#yzm{
+    margin-top:20px;
+}
+
+ /*按钮*/
+#btn{
+	width:277px;
+	height:40px;
+	 
+	margin-top:30px;
+	font-size: 18px;
+	border-radius:3px;
+	border: 0;
+	background-image:linear-gradient(0deg,#069DE0,#27B1F4);
+	color: #fff;
+	margin-bottom: 20px;
+	cursor:pointer;
+}
+.last{
+	 
+	display:block;
+	text-align: left;
+	margin-left :48px;
+	font-size: 15px;
+    width:300px;
+    display:block; margin:0 auto;
+}
+.last .check_box{
+    position: relative;
+    top:2px;
+    left:0px;
+}
+.last a{
+  color: #27B1F4; margin-left :15px;
+}
+.last input{
+   margin-left:150px;
+
+} 
+ .banquan{
+   margin-top:60px;
+   font-size:13px;
+} 
+
+div.y_canvas{
+    width:100%;
+    height:110px;
+    overflow: hidden;
+    position: fixed;
+    bottom:0;
+}
+canvas{
+    position: absolute;
+}
+#y_register1{
+    z-index: 1;
+}
+#y_register2{
+    z-index: 2;
+}
+#y_register3{
+    z-index: 3;
+}
+
+
+ 

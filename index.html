@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>皇室科技</title>
+   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon"/>
+   <link rel="icon" href="picture.ico" type="image/x-icon"/>
+   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/floor3.css">
+  <link rel="stylesheet" href="css/floor4.css">
+  <link rel="stylesheet" href="css/floor5.css">
+  <link rel="stylesheet" href="css/floor6.css">
+     <link rel="stylesheet" href="css/i_header.css">
+  <style>
+  *{
+	margin:0;
+	padding:0;
+  }
+  html,body{
+	height:100%;	
+	overflow:hidden;
+  }
+  #container,.sections,.section{
+	height:100%;
+/*	overflow:hidden;*/
+	position:relative;
+  }
+
+	#section0,#section1,#section2,#section3,#section4,#section5,#section6{
+		background-image:url("tu.jpg");
+		background-size:cover;
+		/*text-align:center;*/
+		color:white;		
+	}
+	#section0{
+		background:url(img/index/bg3a.jpg) 0 0 no-repeat;
+		transition:all 2s ease;
+	}
+	#section2{
+	background:url(img/index/bg4a.jpg) 0 0 no-repeat;
+	}
+	.left{
+	float:left;
+	}
+	.pages{
+		position:fixed;
+		top:40%;
+		left:40px;
+		z-index:30;
+	}
+	.pages>li{
+		width:9px;
+		height:9px;
+		border-radius:50%;
+		list-style:none;
+		background:#fff;
+		margin-bottom:20px;
+		cursor:pointer;
+		transition:all 0.4s linear;
+	}
+	.pages>li:hover{
+		transform:scale(1.3);
+	}
+	.pages li.active{
+		width:12px;
+		height:12px;
+		margin-left:-1px;
+	}
+	h3{
+		transition:all 5s linear;
+		margin-left:100px;
+	}	
+  </style>
+ </head>
+ <body>
+ <div id="i_header"></div>
+  <div id="container">
+	<div class="sections">
+		<div class="section" id="section0">
+			 <div class="bg_hidden"></div>
+            <!--最上面的title-->
+            <div class="nu1">
+            </div>
+            <!--楼层一的主题banner部分-->
+            <div class="f1_banner">
+                <ul class="slide-wrap">
+                    <!--上面的图片切换-->
+                    <li class="slide-item1">
+                        <img src="img/index/img43.png" alt="">
+                        <p>从PC到移动端全网打通，交互体验响应式网站建设开发。</p>
+                    </li>
+                    <li class="slide-item2">
+                        <img src="img/index/img46.png" alt="">
+                    </li>
+                    <li class="slide-item3">
+                        <img src="img/index/img48.png" alt="">
+                    </li>
+                </ul>
+            </div>
+		</div>
+		<div class="section" id="section1">
+			<div class="lfloor" id="lfloor">
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="z_floor3" id="z_f3">
+                 <!--轮播图片-->  
+                <div class="z_banner">
+                    <a href="#">
+                        <ul class="z_banner_img">
+                        </ul>
+                    </a>
+                 <!--切换图片按钮-->  
+                <span class="z_btn_l">
+                    <img src="img/index/z_left.png" alt="">
+                </span>
+                <span class="z_btn_r">
+                    <img src="img/index/z_right.png" alt="">
+                </span>
+                </div>
+                 <!--滚动数字-->  
+                <div class="z_num">
+                    <ul class="z_numl">
+                    </ul>
+                </div>
+            </div>
+		</div>
+		<div class="section" id="section3">
+			<div class="cno_four">
+            <div class="gg">
+                <a href="">
+                 <img src="img/index/img.png" title="点击查看更多">
+                </a>
+            </div>
+            <div class="jj">
+                <a href="">
+                 <img src="img/index/j.png" alt="">
+                </a>
+            </div>
+              <!-- 四个方块    -->
+            <ul class="fk">
+            </ul>
+        </div>
+		</div>
+		<div class="section" id="section5">
+			<div class="y_bg">
+            <!--皇室公告模块-->
+            <div class="y_floor5">
+                <!--皇室公告news标题-->
+                <div class="y_title">
+                    <!--皇室公告的标题图片-->
+                    <img src="./img/index/img25.png" alt="" class="y_title_img">
+                    <ul class="y_nav">
+                        <li>
+                            <a href="#" class="y_gao">
+                                <img src="./img/index/img45.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <img src="./img/index/img27.png" alt="">
+                        </li>
+                    </ul>
+                    <dl class="y_sort">
+                        <dt>VIEW ALL</dt>
+                        <dd><a href="#">查看更多公告</a></dd>
+                    </dl>
+                </div>
+                <!--皇室公告内容展示-->
+                <div class="y_news">
+                    <!--没有触发事件时的公告展示-->
+                    <ul class="y_news_list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+		</div>
+		<div class="section" id="section4">
+			<div class="h_floor6">
+                <div class="content">
+                    <!--关于：左侧文字图片-->
+                    <div class="pic_lef">
+
+                    </div>
+
+                    <!--关于：中间文字简介-->
+                    <div class="txt_mid">
+
+                    </div>
+
+                    <!--关于：右侧小图片-->
+                    <div class="pic_rig">
+
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+  </div>
+  <script src="js/jquery.js"></script>
+  
+  <script src="js/index.js"></script>
+ <script src="js/i_header.js"></script>
+  <script src="js/floor3.js"></script> 
+  <script src="js/floor4.js"></script> 
+  <script src="js/floor5.js"></script> 
+  <script src="js/floor_scroll.js"></script> 
+  <script src="js/pageSwitch.js"></script> 
+  <script>
+	$("#container").PageSwitch();
+  </script>
+
+ </body>
+</html>

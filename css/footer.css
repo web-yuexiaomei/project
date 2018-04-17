@@ -1,0 +1,124 @@
+/*底部的整体样式*/
+footer{
+    color:#777;
+    background-color:#2C2C2C;
+}
+/*底部整体a样式*/
+footer>div>div.container>div.row a{
+    color:#777;
+    text-decoration: none;
+}
+/*底部整体360,百度，搜狗等六种图片的样式*/
+footer>div>div.container>div.row ul.y_icon li{
+    width:80px;
+    height:30px;
+    margin-bottom: 20px;
+    margin-right:20px;
+}
+footer>div>div.container>div.row a>img{
+    width:50px;
+    height:30px;
+}
+/*.img{*/
+    /*background:url(../img/footer/home_ico.png) -288px -898px no-repeat;*/
+/*}*/
+/*.y_baidu{*/
+    /*background-position:-388px -898px;*/
+/*}*/
+/*.y_sougou{*/
+    /*background-position:-488px -898px;*/
+/*}*/
+/*.y_caifutong{*/
+    /*background-position:-288px -949px;*/
+/*}*/
+/*.y_zhifubao{*/
+    /*background-position:-388px -949px;*/
+/*}*/
+/*.y_dianxin{*/
+    /*background-position:-488px -949px;*/
+/*}*/
+/*调整文字的边距*/
+footer .y_margin{
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+/*底部最下面的 粤ICP备10235580号文字样式*/
+footer>div>div.container>div.row span.text_align{
+   position: relative;
+    top:-10px;
+    left:81px;
+}
+/*底部最下面的 左边小图片的样式*/
+footer>div>div.container>div.row img.bottom1{
+    position:relative;
+    left:60px;
+    top:18px;
+}
+/*底部最下面的 右边小图片的样式*/
+footer>div>div.container>div.row img.bottom2{
+    position:relative;
+    right:40px;
+    top:3px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer>div>div.container>div.row ul.y_icon li{
+        width:75px;
+        height:30px;
+        margin:10px 0 15px 0;
+
+    }
+    .y_zhifubao{
+        background-position:-391px -949px;
+    }
+    .y_dianxin{
+        background-position:-493px -949px;
+    }
+    footer>div>div.container>div.row img.bottom2{
+        position:relative;
+        right:18px;
+        top:3px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    footer>div>div.container>div.row ul.y_icon li{
+        width:80px;
+        height:30px;
+        margin:10px 0 15px 0;
+    }
+    footer>div>div.container>div.row div.y_ul{
+        padding: 0;
+    }
+    a{
+        font-size: .5em;
+    }
+    div>h4{
+        font-size: 1.2em;
+    }
+    footer>div>div.container>div.row a>img{
+        width:50px;
+        height:20px;
+    }
+
+    footer>div>div.container>div.row img.bottom1{
+        width:25px;
+        height:18px;
+    }
+    footer>div>div.container>div.row ul{
+        margin: 0 0 10px 0;
+    }
+
+    footer>div>div.container>div.row span.text_align{
+        position: relative;
+        top:1px;
+        left:12px;
+    }
+    footer>div>div.container>div.row img.bottom2{
+        position:relative;
+        right:-305px;
+        top:-100px;
+    }
+}

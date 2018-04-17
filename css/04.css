@@ -1,0 +1,70 @@
+/*pc*/
+.ldetails{width:80%;margin:0 auto;margin-top:20px;border-radius:4px;
+   
+}
+/*div{border:1px solid red;}*/
+
+.ldheader{box-sizing:border-box;}
+  #top-input{
+	     width:30%;
+		 height:34px;
+		 border:1px solid #CEDBE0;
+		 background:url(../img/y_product/search.png) no-repeat 100% center;
+		 float:right;
+		 margin-top:25px;
+		 border-radius:3px;
+		 overflow:hidden;
+		 cursor:pointer;
+	  }
+	  #txtSearch{
+	     width:80%;
+		 height:34px;
+		 border:none;
+		 outline:none;
+		 box-sizing:border-box;
+		 color:#757575;
+		 font-size:14px;
+		 padding-left:15px; 
+		
+	  }
+
+@media screen and (min-width: 992px){
+    .imagearea{margin:0 auto;height:750px;margin-left:80px;}
+    .limagebox{width:24%;float:left;margin:0 auto; margin-top:40px;
+	 text-align:center; opacity:0;width:0;overflow:hidden;}
+    .limagebox a{width:80%;height:240px;position:relative;display:block;
+	             overflow:hidden; border:1px solid #CEDBE0;border-radius:3px;}
+	.limagebox img.pictwo{
+	              transition:all 1000ms ease-out;position:absolute;z-index:10;left:-5%;height:100%;
+                  }
+    .limagebox img.picone{transition:all 1000ms ease-out;position:absolute;z-index:20;left:-5%;width:60px;
+	                      top:40%;left:40%;opacity:0;
+                  }
+	.limagebox:hover img.pictwo{
+	    
+		transform:scale(1.1);
+	}
+    .shadow{position:absolute;z-index:20;width:100%;height:100%;background:black;
+	        opacity:0;transition:all 1000ms ease-out;}
+	
+}
+/*pad*/
+@media screen and (min-width: 768px) and (max-width:991px){
+    .imagearea{margin:0 auto;}
+    .limagebox{width:49%;float:left;margin:0 auto; margin-top:20px;}
+	.limagebox img{width:80%;margin-left:10%;
+	}
+	}
+}
+/*phone*/
+@media screen and (max-width:767px){
+    .imagearea{margin:0 auto;}
+    .limagebox{width:80%;float:left;margin:0 auto; margin-top:20px;}
+	.limagebox img{width:80%;margin-left:10%; }
+}
+.lpagelist{margin-left:800px;margin-bottom:30px;}
+.lpagelist span{ width:120px;height:30px;}
+#lpagelist span{padding-left:12px;padding-right:12px;}
+.lspan{border:1px solid lightblue;border-radius:3px;color:gray;}
+ #lpagelist button{width:40px;padding-bottom:1px;margin-left:3px;margin-right:3px;color:gray;}
+.active{background:lightblue;}
